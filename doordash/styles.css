@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+  
+}
+/************************************* navbar ********************************************/
+
+.navbar {
+    background-color: #ffffff;
+    position: fixed;
+    top: -510px;
+    width: 100%;
+    display: block;
+    z-index: 100;
+    transition: top 0.3s;
+    color: black;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    color: #ff7b00;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding:0 15px 10px 15px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar-link {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar-link:hover {
+    background-color: hsl(20, 100%, 51%);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+/**************************************** welcome****************************************/
+.heading{
+    display: flex;
+    align-items: center;
+    
+}
+.heading > img{
+    width:60px;
+    height:60px;
+    margin-right: 10px; /* Adjust the margin as needed */
+    height: 50px;
+}
+.heading > h1{
+    margin: 0;
+
+}
+.welcome{ 
+    background-image: url("./assets/hero_desktop.webp");
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    padding-top: 3%;
+    padding-bottom: 10%;
+    align-items: center;
+    justify-content: space-around;
+    background-size: cover;
+    top: 0;
+    color:white;
+}
+.welcome > h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.welcome > div{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6%;
+    align-items: end;
+    justify-content: space-evenly;
+}
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.wlcominput1 {
+    border-radius: 30px;
+    height:60px;
+    width:440px;
+    border: none;
+    padding:2%;
+    text-align: center;
+}
+.wlcominput2{
+    border-radius: 25px;
+    height:30px;
+    width:180px;
+    border: none;  
+    text-align: center; 
+}
+.input-wrapper .fa {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+
+/**************************************** section ******************************************/
+
+.features{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+.card{
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+.card > a{
+    text-decoration: none;
+}
+
+/****************************************** layout ********************************************/
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.button-main{
+    border: none;
+    border-radius: 20px;
+    padding:2% 4%;
+    margin-top: 5%;
+    width:40%;
+    background-color: #ff4400;
+    color:white;
+    font-size: 20px;
+}
+.button-main:hover{
+    cursor: pointer;
+    border: #ff4400 1px solid;
+    border-radius: 0%;
+    transition: 0.3s ease-in-out ;
+}
+
+.design{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4%;
+}
+.content{
+    padding-left:4%;
+    display: flex;
+    text-align:start;
+    flex-direction: column;
+}
+
+
+
+/********************************************* grocery *******************************************/
+.grocery{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("./assets/grocery.jpg");
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10%;
+    background-size: cover;
+    
+}
+
+/********************************************* gift **********************************************/
+.gift{
+    background-color: #fbe2d9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2%;
+    width:auto;
+    height: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 18px;
+}
+.gift1{
+    gap:2%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 5% 10%;
+}
+
+
+
+.card1{
+    text-align: center;
+    padding: 2%;
+}
+.card1 > img{
+    width:400px;
+    height:400px
+}
+
+
+
+/*************************************************** tabs **********************************************************/
+.tab {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 5px solid black;
+}
+
+/* Style the tab content */
+.tabcontent {
+    text-align: center;
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+.tabcontent > ul{
+    list-style-type: none;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/*************************************************** footer *******************************************************/
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+
+    background-color: #000000;
+    color:white;
+    padding: 5%;
+}
+
+.categories{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;    
+}
+.categories > div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+.categories a{
+    font-size: 14px;
+    color:white;
+    text-decoration: none;
+    margin-top: 5%;
+}
+
+.categories a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.downloadImages img{
+    width:350px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.downloadImages img:hover{
+    cursor: pointer;
+    background-color: #cac9c9;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+/*************************************************** Responsiveness ***********************************************/
+@media only screen and (min-width: 35.8em) {
+    
+}
+
+@media only screen and (min-width: 60.625em) {
+}
+
+@media only screen and (max-width: 600px) { 
+    .navbar-container{
+        flex-direction: column;
+        padding:0 15px;
+    }  
+    .welcome{
+        background-image: none;
+        background-color:#ff4400;
+    }
+    .wlcominput1{
+        border-radius: 30px;
+        height:50px;
+        width:240px;
+        border: none;
+        padding:2%;
+    }
+    .wlcominput2{
+        border-radius: 25px;
+        height:30px;
+        width:140px;
+        border: none;
+        margin-top: 2%;
+    }
+
+    .left{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button-main{
+        font-size: 14px;
+    }
+
+    .features{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 5%;
+        margin-top: 10%;
+    }
+    
+    .card{
+        width: 200px;
+        text-align: center;
+    }
+    
+    .card1 > h1{
+        font-size: 16px;
+    }
+    
+
+    .content{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .design > img{
+        width:200px;
+        height: 200px;
+    }
+    .gift{
+        margin-bottom: 30%;
+        font-size: 14px;
+    }
+    .gift1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr );
+        padding: 2% 0;
+    }
+    .card1 > img{
+        width:250px;
+        height:200px;
+    }
+    .categories{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5%;    
+    }
+    .categories > div{
+        display: flex;
+        flex-direction: column;
+        margin-right: 5%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .downloadImages img{
+        width: 250px;
+        height: 100px;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .left{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+    }
+    .gift{
+        margin-bottom: 30%;
+        font-size: 14px;
+    }
+    .gift1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr );
+        padding: 2% 0;
+    }
+    .design > img{
+        width:500px;
+        height: 400px;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 768px) and (max-width:1022px) {
+    .welcome1 {
+        margin-top: 4%;
+        text-align:center;
+    }
+    .wlcominput1{
+        border-radius: 30px;
+        height:50px;
+        width:240px;
+        border: none;
+        padding:2%;
+    }
+    .wlcominput2{
+        border-radius: 25px;
+        height:30px;
+        width:140px;
+        border: none;
+        margin-top: 2%;
+    }
+
+    .left{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button-main{
+        font-size: 13px;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    .features{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 5%;
+        margin-top: 10%;
+    }
+    
+    .card{
+        width: 200px;
+        text-align: center;
+    }
+    
+    .card1 > h1{
+        font-size: 16px;
+    }
+    
+
+    .content{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .design > img{
+        width:400px;
+        height:350px;
+    }
+    .gift{
+        margin-bottom: 20%;
+        font-size: 14px;
+    }
+    .gift1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr );
+        padding: 2% 0;
+    }
+    .card1 > img{
+        width:250px;
+        height:200px;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
+

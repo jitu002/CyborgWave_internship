@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+ }
+ body{
+    background: rgb(18,0,31);
+    background: linear-gradient(218deg, rgba(18,0,31,1) 2%, rgba(80,0,116,1) 98%, rgba(49,0,98,0.9865196078431373) 100%); 
+    display: grid;
+    height: 100vh;
+    place-items: center;
+ }
+ .main{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    border: 5px solid black;
+    border-radius: 6px; 
+ }
+ .main input[type='text'] {
+    width: 88%;
+    position: relative;
+    height: 80px;
+    top: 5px;
+    text-align: right;
+    padding: 3px 6px;
+    outline: none;
+    font-size: 40px;
+    border: 5px solid black;
+    display: flex;
+    margin: auto;
+    border-radius: 6px;
+    color: black;
+ }
+ .btn input[type='button']{
+    width:90px;
+    padding: 2px;
+    margin: 2px 0px;
+    position: relative;
+    left: 13px;
+    top: 20px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
+    background: rgb(18,0,31);
+    background: linear-gradient(218deg, rgba(18,0,31,1) 2%, rgba(0,0,0,1) 98%, rgba(49,0,98,0.9865196078431373) 100%);
+    border-radius: 6px;
+    color: white;
+ }
+ .btn input[type='button']:hover{
+    background-color: black;
+    color: white;
+ }
+ #imp{
+  background: rgb(255,0,0);
+ background: linear-gradient(218deg, rgba(255,0,0,0.9865196078431373) 100%, rgba(255,123,0,1) 100%);
+ }
